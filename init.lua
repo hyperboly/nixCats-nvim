@@ -1,4 +1,5 @@
 require 'keymaps'
+require 'options'
 
 -- NOTE: nixCats: this just gives nixCats global command a default value
 -- so that it doesnt throw an error if you didnt install via nix.
@@ -447,9 +448,13 @@ require('nixCatsUtils.lazyCat').setup(nixCats.pawsible { 'allPlugins', 'start', 
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       -- NOTE: nixCats: there is help in nixCats for lsps at `:h nixCats.LSPs` and also `:h nixCats.luaUtils`
       local servers = {}
-      -- servers.clangd = {},
-      -- servers.gopls = {},
-      -- servers.pyright = {},
+      servers.clangd = {}
+      servers.gopls = {}
+      servers.pyright = {}
+      -- servers.ansiblels = {}
+      servers.docker_compose_language_service = {}
+      servers.yamlls = {}
+
       -- servers.rust_analyzer = {},
       -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
       --

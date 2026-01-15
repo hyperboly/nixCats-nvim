@@ -102,6 +102,13 @@
           tree-sitter
           nixd
           stylua
+          yaml-language-server
+          ccls
+          clang-tools
+          pyright
+          docker-compose-language-service
+          bash-language-server
+          gopls
         ];
         kickstart-debug = [
           delve
