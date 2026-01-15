@@ -103,7 +103,6 @@
           nixd
           stylua
           yaml-language-server
-          ccls
           clang-tools
           pyright
           docker-compose-language-service
@@ -121,6 +120,7 @@
       # This is for plugins that will load at startup without using packadd:
       startupPlugins = with pkgs.vimPlugins; {
         general = [
+          harpoon
           vim-sleuth
           lazy-nvim
           comment-nvim
