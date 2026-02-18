@@ -120,7 +120,10 @@
       # This is for plugins that will load at startup without using packadd:
       startupPlugins = with pkgs.vimPlugins; {
         general = [
+          # Custom
           harpoon2
+          lazygit-nvim
+
           vim-sleuth
           lazy-nvim
           comment-nvim
