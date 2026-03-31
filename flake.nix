@@ -107,6 +107,7 @@
           pyright
           docker-compose-language-service
           bash-language-server
+          terraform-ls
           gopls
         ];
         kickstart-debug = [
