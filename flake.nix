@@ -109,6 +109,7 @@
           bash-language-server
           terraform-ls
           gopls
+          ansible-language-server
         ];
         kickstart-debug = [
           delve
